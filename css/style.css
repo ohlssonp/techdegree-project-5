@@ -1,0 +1,24 @@
+
+  .gallery {
+    width:70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    margin:0 auto
+  }
+  
+    .item {
+      padding: .5vw;
+    }
+img {
+
+  width:100%;
+}
+
+#search {
+  width: 30%;
+  margin: 19px auto;
+  padding: 0.65rem;
+  display: block;
+}
+ 
