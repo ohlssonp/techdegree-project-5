@@ -29,40 +29,12 @@
            <div class="item"><a href="photos/12.jpg" data-caption="Bluebells I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="photos/thumbnails/12.jpg" alt="Bluebells"></a></div>
          </div>
     <script src="js/baguetteBox.min.js"></script>
-    <!-- <script src="js/searchFilter.js"></script> -->
+    <script src="js/search.js"></script>
     <script src="js/app.js"></script>
 
 
   </body>
 </html>
 
-<script>
-// Get references to the search input and gallery container
-const searchInput = document.getElementById('search');
-const gallery = document.querySelector('.gallery');
 
-// Listen for keyup events on the search input
-searchInput.addEventListener('keyup', function() {
-  // Get the current value of the search input
-  const searchValue = this.value.toLowerCase();
-
-  // Loop over all the items in the gallery
-  const items = gallery.querySelectorAll('.item');
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-      
-    // Get the caption text and make it lowercase
-    const caption = item.querySelector('a').getAttribute('data-caption').toLowerCase();
-
-    // Check if the search value is included in the caption text
-    if (caption.includes(searchValue)) {
-      // If there's a match, display the container of the image
-      item.style.display = 'block';
-    } else {
-      // If not, hide the container of the image
-      item.style.display = 'none';
-    }
-  }
-});
-</script>
 
