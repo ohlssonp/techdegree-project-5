@@ -1,10 +1,12 @@
 .gallery {
-  width: 54em;
+  max-width:900px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(200px, 25%), 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
   margin: 0 auto;
+  justify-items: center;
 }
+
 
 .item {
   display: block;
@@ -13,12 +15,7 @@
 
 .item img {
   width: 100%;
-  height: auto;
   border-radius: 4%;
-  box-shadow: 0 0 3px #41474a26, 0 1px 3px #00000047 !important;
-}
-.item img:hover {
-  box-shadow: 0 0 14px #41474a26,0 6px 12px #0000002e!important;
 }
 
 .search-container {
